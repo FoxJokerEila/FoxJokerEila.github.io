@@ -7,7 +7,7 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="http://example.com/img/VueCover.jpg">
 <meta property="article:published_time" content="2021-01-20T03:55:17.000Z">
-<meta property="article:modified_time" content="2021-01-21T08:24:20.003Z">
+<meta property="article:modified_time" content="2021-01-21T08:46:29.651Z">
 <meta property="article:author" content="Bogey">
 <meta property="article:tag" content="前端">
 <meta name="twitter:card" content="summary">
@@ -102,7 +102,7 @@ const getScript = url => new Promise((resolve, reject) => {
   isHome: false,
   isHighlightShrink: false,
   isToc: true,
-  postUpdate: '2021-01-21 16:24:20'
+  postUpdate: '2021-01-21 16:46:29'
 }</script><noscript><style type="text/css">
   #nav {
     opacity: 1
@@ -167,7 +167,7 @@ if (asideStatus !== undefined) {
    } else {
      document.documentElement.classList.remove('hide-aside')
    }
-}})()</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/profile.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/VueCover.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">柏忌</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">vue笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-01-20T03:55:17.000Z" title="Created 2021-01-20 11:55:17">2021-01-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-21T08:24:20.003Z" title="Updated 2021-01-21 16:24:20">2021-01-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-数据绑定"><a href="#1-数据绑定" class="headerlink" title="1. 数据绑定"></a>1. 数据绑定</h2><h3 id="1-1-文本插值"><a href="#1-1-文本插值" class="headerlink" title="1.1 文本插值"></a>1.1 文本插值</h3><p>使用双大括号：(<code>text</code>是数据对象属性)</p>
+}})()</script><meta name="generator" content="Hexo 5.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/profile.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">5</div></a></div></div></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/VueCover.jpg')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">柏忌</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">vue笔记</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2021-01-20T03:55:17.000Z" title="Created 2021-01-20 11:55:17">2021-01-20</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2021-01-21T08:46:29.651Z" title="Updated 2021-01-21 16:46:29">2021-01-21</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="1-数据绑定"><a href="#1-数据绑定" class="headerlink" title="1. 数据绑定"></a>1. 数据绑定</h2><h3 id="1-1-文本插值"><a href="#1-1-文本插值" class="headerlink" title="1.1 文本插值"></a>1.1 文本插值</h3><p>使用双大括号：(<code>text</code>是数据对象属性)</p>
 <p>​    如果只渲染一次：<code>&#123;&#123; *text &#125;&#125;</code></p>
 <p>​    如果是HTML片段，使用三个大括号：<code>&#123;&#123;&#123; text &#125;&#125;&#125;</code></p>
 <p>​    在HTML标签行内也可以生效：<code>&lt;li data-id = &#39;&#123;&#123; id &#125;&#125;&#39;&gt;&lt;/li&gt;</code></p>
@@ -179,7 +179,7 @@ if (asideStatus !== undefined) {
 <p>​    无效的例子: <code>&#123;&#123; var logo = 'BOGEY' &#125;&#125;</code></p>
 <h3 id="1-3-指令"><a href="#1-3-指令" class="headerlink" title="1.3 指令"></a>1.3 指令</h3><p>​    凡 <code>v-</code> 开头的都是指令，绑定着JS表达式和过滤器</p>
 <p>​    当表达式的值发生变化时，这个变化也反映到DOM(页面)上</p>
-<p><img src="E:\myWebSite\FoxJokerEila.github.io\source\img\image-20210120121539598.png" alt="image-20210120121539598"></p>
+<p><img src="/img/image-20210120121539598.png" alt="image-20210120121539598"></p>
 <h3 id="1-4-分隔符"><a href="#1-4-分隔符" class="headerlink" title="1.4 分隔符"></a>1.4 分隔符</h3><p>​    数据绑定语法的花括号可以替换为别的符号。</p>
 <p>​    可以在<code>Vue.config</code>中配置，这是一个对象，包含所有的全局配置，注意在<code>Vue</code>实例化之前修改。</p>
 <p>​    源码：</p>
@@ -189,7 +189,7 @@ if (asideStatus !== undefined) {
 <p>​    语法也随之改变</p>
 <p>​    <code>&#123;&#123; example &#125;&#125;</code> -&gt; <code>&lt;% example %&gt;</code></p>
 <h2 id="2-指令"><a href="#2-指令" class="headerlink" title="2 指令"></a>2 指令</h2><p>Directive ，指令是带有<code>v-</code>前缀的特性。其值只能为绑定表达式，职责是当表达式的值改变时吧某些特殊的行为应用到DOM上。</p>
-<h3 id="2-1-内部指令"><a href="#2-1-内部指令" class="headerlink" title="2.1 内部指令"></a>2.1 内部指令</h3><p><img src="E:\myWebSite\FoxJokerEila.github.io\source\img\image-20210120123604183.png" alt="image-20210120123604183"></p>
+<h3 id="2-1-内部指令"><a href="#2-1-内部指令" class="headerlink" title="2.1 内部指令"></a>2.1 内部指令</h3><p><img src="/img/image-20210120123604183.png" alt="image-20210120123604183"></p>
 <h4 id="1-v-if"><a href="#1-v-if" class="headerlink" title="1. v-if"></a>1. v-if</h4><p>作用是移除</p>
 <p>之前学过的不再多记</p>
 <p>如果想同时切换多个元素，使用<code>&lt;template&gt;</code>当做包装元素，最后渲染出来的时候不会包含它。</p>
@@ -205,9 +205,9 @@ if (asideStatus !== undefined) {
 <p>总之，<code>v-if</code>有更高的切换消耗，而<code>v-show</code>有更高的初始渲染消耗。</p>
 <p>所以，频繁切换就用<code>v-show</code>，如果条件变化不多，则使用<code>v-if</code></p>
 <h4 id="3-v-else"><a href="#3-v-else" class="headerlink" title="3. v-else"></a>3. v-else</h4><p><code>v-else</code>必须跟在<code>v-if</code>或者<code>v-show</code>后面，充当else功能。</p>
-<p><img src="E:\myWebSite\FoxJokerEila.github.io\source\img\image-20210120131430408.png" alt="image-20210120131430408"></p>
+<p><img src="/img/image-20210120131430408.png" alt="image-20210120131430408"></p>
 <p>下面这段有待研究：</p>
-<p><img src="E:%5CmyWebSite%5CFoxJokerEila.github.io%5Csource%5Cimg%5Cimage-20210120132916275.png" alt="image-20210120132916275"></p>
+<p><img src="/img/image-20210120132916275.png" alt="image-20210120132916275"></p>
 <p><strong>2.1.0添加了<code>v-else-if</code>，也要求跟在<code>v-if</code>或<code>v-else-if</code>后面</strong></p>
 <h4 id="4-v-model"><a href="#4-v-model" class="headerlink" title="4. v-model"></a>4. v-model</h4><p>这是一种语法糖</p>
 <p>在<code>input</code>、<code>select</code>、<code>text</code>、<code>checkbox</code>、<code>radio</code>等表单控件元素上创建双向数据绑定。可以在输入事件中同步更新数据</p>
@@ -260,7 +260,7 @@ if (asideStatus !== undefined) {
 </li>
 <li><p><code>items.$remove(item)</code> 它是<code>splice</code>的语法糖</p>
 </li>
-<li><p><code>splice</code>的话要这样写<img src="E:%5CmyWebSite%5CFoxJokerEila.github.io%5Csource%5Cimg%5Cimage-20210121154044831.png" alt="image-20210121154044831"></p>
+<li><p><code>splice</code>的话要这样写<img src="/img/image-20210121154044831.png" alt="image-20210121154044831"></p>
 </li>
 <li><p>可见语法糖简化了很多</p>
 </li>
